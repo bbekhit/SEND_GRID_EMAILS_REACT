@@ -9,7 +9,7 @@ export const emailContactForm = data => async dispatch => {
 	};
 	const body = JSON.stringify(data);
 	try {
-		const res = await axios.post('/api/v1/auth//contact', body, config);
+		const res = await axios.post('/api/v1/contact/contact', body, config);
 		dispatch(setAlert(res.data.message, 'success', 'ContactComponent'));
 	} catch (err) {
 		let error = err.response.data.error;

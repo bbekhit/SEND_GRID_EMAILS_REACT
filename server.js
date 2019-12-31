@@ -30,7 +30,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // routes
 app.use('/api/v1/auth', authRoutes);
-app.use('/api/v1/auth', contactRoutes);
+app.use('/api/v1/contact', contactRoutes);
 
 const port = process.env.PORT || 5000;
 
