@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 import store from './store/store';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './App.css';
 import Signup from './components/Auth/Signup';
 import Signin from './components/Auth/Signin';
@@ -35,6 +36,9 @@ if (localStorage.token) {
 }
 
 function App() {
+	useEffect(() => {
+		AOS.init();
+	}, []);
 	return (
 		<Provider store={store}>
 			<BrowserRouter>

@@ -61,6 +61,35 @@ const Signup = ({ signup, preSignup, history, error }) => {
 					</button>
 				</form>
 			</div>
+			<div
+				className='d-flex justify-content-between w-50'
+				style={{ border: '2px solid black', margin: '20px auto' }}
+			>
+				<div
+					style={{
+						width: '200px',
+						height: '200px',
+						margin: ' 200px auto',
+						border: '2px solid red',
+					}}
+					data-aos='fade-right'
+					data-aos-duration='1000'
+				>
+					Test
+				</div>
+				<div
+					style={{
+						width: '200px',
+						height: '200px',
+						margin: ' 200px auto',
+						border: '2px solid red',
+					}}
+					data-aos='fade-left'
+					data-aos-duration='1000'
+				>
+					Test
+				</div>
+			</div>
 		</div>
 	);
 };
